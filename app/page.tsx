@@ -8,6 +8,9 @@ const steps = [
   "Receive your supplies",
 ];
 
+const whatsappNumber = "+254 727 594893";
+const whatsappLink = "https://wa.me/254727594893";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#f7f4ee] text-[#1f2933]">
@@ -211,8 +214,7 @@ export default function Home() {
             </h2>
             <p className="mt-5 max-w-2xl text-base leading-7 text-white/72">
               Send Lieu Enterprise Limited your list of items, quantities, and
-              delivery details. This first version can be updated with phone,
-              email, WhatsApp, and location once the client confirms them.
+              delivery details on WhatsApp for a quick quotation and follow-up.
             </p>
           </div>
 
@@ -224,12 +226,15 @@ export default function Home() {
               <p>Stationery and office items</p>
               <p>Cleaning products and facility supplies</p>
               <p>Water dispensers and assorted general items</p>
+              <p>WhatsApp: {whatsappNumber}</p>
             </div>
             <a
-              href="mailto:info@lieuenterprise.com"
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-6 block rounded-md bg-[#0f3d57] px-5 py-3 text-center text-sm font-black text-white transition hover:bg-[#155a78]"
             >
-              Email placeholder
+              Chat on WhatsApp
             </a>
           </div>
         </div>
